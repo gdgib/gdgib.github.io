@@ -9,7 +9,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Charcoal settings
 author_name: Greg Gibeling
-author_url: https://github.com/gdgib/
+author_url: https://gdgib.github.io/
 github_username: gdgib
 linkedin_username: greg-gibeling-91924676
 
@@ -19,7 +19,7 @@ excerpt_separator: "<!-- more -->"
 
 # Theme settings
 #  Uncomment these for local testing, comment them out when publishing
-#repository: g2forge/g2forge.github.io
+#repository: gdgib/gdgib.github.io
 #theme: jekyll-theme-charcoal
 #  Uncomment these for publishing, comment them out for testing
 remote_theme: g2forge/charcoal
