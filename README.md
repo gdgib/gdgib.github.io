@@ -18,3 +18,7 @@ My job is curing cancer, coding is just a hobby.
 </div>
 
 <br/>
+
+# Projects
+
+* [G2 Forge](http://www.g2forge.com/): a large collection of inter-related projects that I'm slowly evolving and releasing.
