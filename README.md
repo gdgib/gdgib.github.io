@@ -4,20 +4,15 @@ title: Greg Gibeling
 permalink: /index.html
 ---
 # About Me
-
-<div style="display: flex; align-items: center">
-<div style="float: left">
-<img src="images/ProfileMedium.jpg" alt="Greg Gibeling profile picture" style="width: 200px; display: block; border-radius: 15px;"/>
-</div>
-
-<div style="margin-left: 20px; float: left; width: 400px">
-Hardware & software architect.
-When I say full stack I'm not kidding: everything from transistors to copyright law.
-My job is curing cancer, coding is just a hobby.
-</div>
-</div>
-
 <br/>
+{% capture about %}
+<p>I'm a hardware & software architect.</p>
+
+<p>When I say full stack I'm not kidding: everything from transistors to copyright law.
+My job is curing cancer, coding is just a hobby.</p>
+{% endcapture %}
+{% include about_image.html image_src="images/ProfileMedium.jpg" image_alt="Greg Gibeling profile picture" content=about %}
+
 
 # Projects
 
