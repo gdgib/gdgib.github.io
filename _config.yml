@@ -3,7 +3,7 @@
 
 # Site settings
 title: Greg Gibeling
-description: Hardware & software architect.
+description: Hardware & software architect. Coding is an art and a hobby.
 image: images/ProfileMedium.jpg
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
