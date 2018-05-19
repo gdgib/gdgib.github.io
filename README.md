@@ -20,7 +20,23 @@ If you want to know more, we'll just have to meet off the internet.</p>
 {% endcapture %}
 {% include about_image.html image_src="images/ProfileMedium.jpg" image_alt="Greg Gibeling profile picture" content=about %}
 
-
+{% if site.projects.size > 0 %}
 # Projects
 
-* [G2 Forge](http://www.g2forge.com/): a large collection of inter-related projects that I'm slowly evolving and releasing.
+<ul>
+{% assign active = site.projects | where: "active","true" %}
+{% assign past = site.projects | where: "active","false" %}
+{% if active.size > 0 %}
+	<li>Active projects<ul>
+	{% for item in active %}
+		<li><a href="{{ item.url }}">{{ item.title }}</a>: {{ item.description }}</li>
+	{% endfor %}</ul></li>
+{% endif %}
+{% if past.size > 0 %}
+	<li>Past projects<ul>
+	{% for item in past %}
+		<li><a href="{{ item.url }}">{{ item.title }}</a>: {{ item.description }}</li>
+	{% endfor %}</ul></li>
+{% endif %}
+</ul>
+{% endif %}
