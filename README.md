@@ -4,7 +4,6 @@ title: Greg Gibeling
 permalink: /index.html
 ---
 # About Me
-<br/>
 {% capture about %}
 <p>I'm a hardware & software architect.
 When I say full stack I'm not kidding: everything from transistors to copyright law.
