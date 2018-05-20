@@ -142,7 +142,7 @@ GEM
     jekyll-theme-cayman (0.1.0)
       jekyll (~> 3.5)
       jekyll-seo-tag (~> 2.0)
-    jekyll-theme-charcoal (0.0.4)
+    jekyll-theme-charcoal (0.0.5)
       jekyll (~> 3.6)
       jekyll-seo-tag (~> 2.0)
     jekyll-theme-dinky (0.1.0)
@@ -240,7 +240,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-feed (~> 0.6)
-  jekyll-theme-charcoal (~> 0.0.4)
+  jekyll-theme-charcoal (~> 0.0.5)
   tzinfo-data
 
 BUNDLED WITH
