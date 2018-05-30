@@ -39,3 +39,10 @@ If you want to know more, we'll just have to meet off the internet.</p>
 {% endif %}
 </ul>
 {% endif %}
+
+
+<script src="assets/js/epitaph.js"></script>
+<script type="text/javascript">
+function getElement() { return document.getElementsByClassName("footer-heading")[0]; }
+window.addEventListener("load", loadEpitaph(getElement), false)
+</script>
