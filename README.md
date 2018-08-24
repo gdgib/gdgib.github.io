@@ -28,13 +28,14 @@ If you want to know more, we'll just have to meet off the internet.</p>
 {% if active.size > 0 %}
 	<li>Active projects<ul>
 	{% for item in active %}
-		<li><a href="{{ item.url }}">{{ item.title }}</a>: {{ item.description }}</li>
+		{% assign link = site.projects | where: "active","true" %}
+		<li><a href="{{ item.link | default: item.url }}">{{ item.title }}</a>: {{ item.description }}</li>
 	{% endfor %}</ul></li>
 {% endif %}
 {% if past.size > 0 %}
 	<li>Past projects<ul>
 	{% for item in past %}
-		<li><a href="{{ item.url }}">{{ item.title }}</a>: {{ item.description }}</li>
+		<li><a href="{{ item.link | default: item.url }}">{{ item.title }}</a>: {{ item.description }}</li>
 	{% endfor %}</ul></li>
 {% endif %}
 </ul>
