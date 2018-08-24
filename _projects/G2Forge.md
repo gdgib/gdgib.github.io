@@ -1,6 +1,6 @@
 ---
 title: G2 Forge
-description: A large collection of inter-related projects that I'm slowly evolving and releasing.
+description: Open source software and gateware, from standard libraries to the highly specialized projects which necessitated their development.
 link: http://www.g2forge.com/
 active: true
 ---
