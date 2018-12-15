@@ -36,9 +36,16 @@ plugins:
 collections:
   projects:
     output: true
+  jobs:
+    output: true
 defaults:
 - scope:
     path: ''
     type: projects
   values:
     layout: project
+- scope:
+    path: ''
+    type: jobs
+  values:
+    layout: job

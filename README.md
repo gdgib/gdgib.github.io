@@ -28,7 +28,6 @@ If you want to know more, we'll just have to meet off the internet.</p>
 {% if active.size > 0 %}
 	<li>Active projects<ul>
 	{% for item in active %}
-		{% assign link = site.projects | where: "active","true" %}
 		<li><a href="{{ item.link | default: item.url }}">{{ item.title }}</a>: {{ item.description }}</li>
 	{% endfor %}</ul></li>
 {% endif %}
@@ -38,6 +37,17 @@ If you want to know more, we'll just have to meet off the internet.</p>
 		<li><a href="{{ item.link | default: item.url }}">{{ item.title }}</a>: {{ item.description }}</li>
 	{% endfor %}</ul></li>
 {% endif %}
+</ul>
+{% endif %}
+
+{% if site.jobs.size > 0 %}
+# Professional
+
+<ul>
+{% assign items = site.jobs | sort: 'start' %}
+{% for item in items %}
+	<li><!--<a href="{{ item.link | default: item.url }}">-->{{ item.position }} at {{ item.employer }}<!--</a>-->, from {{ item.start | date: "%B %Y" }}{% if item.end %} to {{ item.end | date: "%B %Y" }}{% else %} onwward{% endif %}</li>
+{% endfor %}
 </ul>
 {% endif %}
 
