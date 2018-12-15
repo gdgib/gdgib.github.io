@@ -1,0 +1,8 @@
+---
+layout: bare
+---
+<h1>{{ page.position }} at {{ page.employer }}</h1>
+
+From {{ page.start | date: "%B %Y" }}{% if page.end %} to {{ page.end | date: "%B %Y" }}{% endif %}
+
+{{ content }}
