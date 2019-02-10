@@ -14,7 +14,9 @@ author_url: https://www.gdgib.com/
 email: gdgib@outlook.com
 github_username: gdgib
 linkedin_username: greg-gibeling-91924676
+bare: false
 toc: true
+credits: true
 
 # Blog settings
 show_excerpts: true
@@ -49,3 +51,4 @@ defaults:
     type: jobs
   values:
     layout: job
+    bare: true

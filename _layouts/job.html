@@ -1,8 +1,8 @@
 ---
-layout: bare
+layout: default
 ---
-<h1>{{ page.position }} at {{ page.employer }}</h1>
+<h1>{% if page.position_link %}<a href="{{ page.position_link }}">{% endif %}{{ page.position }}{% if page.position_link %}</a>{% endif %} at {% if page.employer_link %}<a href="{{ page.employer_link }}">{% endif %}{{ page.employer }}{% if page.employer_link %}</a>{% endif %}</h1>
 
-From {{ page.start | date: "%B %Y" }}{% if page.end %} to {{ page.end | date: "%B %Y" }}{% endif %}
+<p>From {{ page.start | date: "%B %Y" }}{% if page.end %} to {{ page.end | date: "%B %Y" }}{% else %} through the present{% endif %}</p>
 
 {{ content }}

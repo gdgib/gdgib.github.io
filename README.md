@@ -46,7 +46,13 @@ If you want to know more, we'll just have to meet off the internet.</p>
 <ul>
 {% assign items = site.jobs | sort: 'start' %}
 {% for item in items %}
-	<li><!--<a href="{{ item.link | default: item.url }}">-->{{ item.position }} at {{ item.employer }}<!--</a>-->, from {{ item.start | date: "%B %Y" }}{% if item.end %} to {{ item.end | date: "%B %Y" }}{% else %} onwward{% endif %}</li>
+	<li>
+		{% if item.hascontent %}
+			<a href="{{ item.url }}">{{ item.position }} at {{ item.employer }}</a>, from {{ item.start | date: "%B %Y" }}{% if item.end %} to {{ item.end | date: "%B %Y" }}{% else %} onwward{% endif %}
+		{% else %}
+			{% if item.position_link %}<a href="{{ item.position_link }}">{% endif %}{{ item.position }}{% if item.position_link %}</a>{% endif %} at {% if item.employer_link %}<a href="{{ item.employer_link }}">{% endif %}{{ item.employer }}{% if item.employer_link %}</a>{% endif %}, from {{ item.start | date: "%B %Y" }}{% if item.end %} to {{ item.end | date: "%B %Y" }}{% else %} onwward{% endif %}
+		{% endif %}
+	</li>
 {% endfor %}
 </ul>
 {% endif %}
