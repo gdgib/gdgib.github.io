@@ -4,6 +4,7 @@ position: Embedded Software Engineer
 start: 1999-08-01
 end: 2002-05-01
 employer_link: http://www.jkmicro.com/
+hascontent: true
 ---
 
 At the time of my hiring, I was in high school and the 4th employee of JK Microsystems.

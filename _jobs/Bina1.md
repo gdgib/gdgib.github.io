@@ -4,6 +4,7 @@ position: Senior Software Engineer
 start: 2013-06-01
 end: 2014-05-01
 employer_link: http://www.bina.com/
+hascontent: true
 ---
 
 As a senior software engineer at a small, but high impact, startup I was responsible for everything from framework development to training engineers on IDEs.

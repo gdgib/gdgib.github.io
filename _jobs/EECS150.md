@@ -5,6 +5,7 @@ start: 2003-05-01
 end: 2005-05-01
 employer_link: https://www.berkeley.edu/
 position_link: http://www-inst.eecs.berkeley.edu/~cs150/sp04/
+hascontent: true
 ---
 
 My job as Head TA was to ensure the lab portion of EECS150, consisting of 3 hours of lab work and 1 hour of lab lecture per week for students, ran smoothly.
